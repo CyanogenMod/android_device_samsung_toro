@@ -1,3 +1,0 @@
-require board=tuna
-require version-bootloader=I9250XXKF04JUN
-
