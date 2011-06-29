@@ -1,0 +1,7 @@
+#
+# system.prop for toro
+#
+
+rild.libpath=/vendor/lib/libsec-ril_lte.so
+rild.libargs=-d /dev/ttys0
+telephony.lteOnCdmaProductType=lte
