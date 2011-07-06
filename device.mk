@@ -20,5 +20,8 @@
 
 DEVICE_PACKAGE_OVERLAYS := device/samsung/toro/overlay
 
+PRODUCT_COPY_FILES += \
+	device/samsung/toro/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
+
 $(call inherit-product, device/samsung/tuna/device.mk)
 $(call inherit-product-if-exists, vendor/samsung/toro/device-vendor.mk)
