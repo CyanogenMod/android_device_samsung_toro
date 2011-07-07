@@ -1,4 +1,4 @@
-# BCM4330 B1 FCBGA SS Proxima VZW Rev.01 6/28/2011
+# BCM4330 B2 FCBGA SS Proxima VZW Rev.02 7/4/2011
 manfid=0x2d0
 prodid=0x0532
 vendid=0x14e4
@@ -43,14 +43,14 @@ pa1hib1=0xFD58
 pa1hib2=0xFF5A
 sromrev=3
 # 2.4G Tx Power: 17/14/13
-maxp2ga0=74
+maxp2ga0=78
 ofdm2gpo=0x66666666
 mcs2gpo0=0x8888
 mcs2gpo1=0x8888
 # 5G Tx Power: 14/13
-maxp5ga0=0x4a
-maxp5gla0=0x4a
-maxp5gha0=0x4a
+maxp5ga0=0x42
+maxp5gla0=0x42
+maxp5gha0=0x42
 ofdm5gpo=0x66666666
 ofdm5glpo=0x66666666
 ofdm5ghpo=0x66666666
@@ -68,6 +68,7 @@ extpagain5g=2
 #rfreg033=0x1f
 rfreg033=0x19
 rfreg033_cck=0x1f
+cckdigfilttype=22
 
 txalpfbyp2g=1
 #txalpfbyp2g_cck=0
