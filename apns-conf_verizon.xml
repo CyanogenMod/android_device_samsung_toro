@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<apns version="6">
+    <apn carrier="Verizon IMS"
+        mmsc=""
+        mcc="311"
+        mnc="480"
+        apn="VZWIMS"
+        user=""
+        password=""
+        type="ims"
+        authtype="0"
+        protocol="IPV4V6"
+    />
+
+    <apn carrier="Verizon Admin"
+        mmsc=""
+        mcc="311"
+        mnc="480"
+        apn="VZWADMIN"
+        user=""
+        password=""
+        type="admin"
+        authtype="0"
+        protocol="IPV4V6"
+    />
+
+    <apn carrier="Verizon Internet"
+        mcc="311"
+        mnc="480"
+        apn="VZWINTERNET"
+        user=""
+        password=""
+        type="default,hipri"
+        authtype="0"
+        protocol="IPV4V6"
+    />
+
+    <apn carrier="Verizon APP"
+        mmsc="http://mms.vtext.com/servlets/mms"
+        mcc="311"
+        mnc="480"
+        apn="VZWAPP"
+        user=""
+        server="*"
+        password=""
+        type="cbs,mms"
+        authtype="0"
+        protocol="IPV4V6"
+    />
+</apns>
