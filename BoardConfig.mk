@@ -18,5 +18,9 @@
 # Use the part that is common between all tunas
 include device/samsung/tuna/BoardConfig.mk
 
+# Use/add toro-specific variants
+TARGET_RECOVERY_UPDATER_LIBS += librecovery_updater_toro
+TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/toro
+
 # STOPSHIP: Fix Framework/Telephony not to parse the kernel cmdline!
 BOARD_KERNEL_CMDLINE += product_type=lte
