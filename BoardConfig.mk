@@ -17,3 +17,6 @@
 
 # Use the part that is common between all tunas
 include device/samsung/tuna/BoardConfig.mk
+
+# STOPSHIP: Fix Framework/Telephony not to parse the kernel cmdline!
+BOARD_KERNEL_CMDLINE += product_type=lte
