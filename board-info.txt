@@ -1,0 +1,4 @@
+require board=tuna
+require version-bootloader=PRIMEKG04
+require version-baseband=I515.EG02
+
