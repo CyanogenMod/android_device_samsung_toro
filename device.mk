@@ -22,7 +22,7 @@ DEVICE_PACKAGE_OVERLAYS := device/samsung/toro/overlay
 
 PRODUCT_COPY_FILES += \
 	device/samsung/toro/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
-	device/sample/etc/apns-conf_verizon.xml:system/etc/apns-conf.xml \
+	device/sample/etc/test-apns-conf_verizon.xml:system/etc/apns-conf.xml \
 	frameworks/base/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
 
 PRODUCT_PROPERTY_OVERRIDES += \
