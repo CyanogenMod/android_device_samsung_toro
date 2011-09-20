@@ -21,7 +21,11 @@ MANUFACTURER=samsung
 
 mkdir -p ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 unzip -j -o ../../../${DEVICE}_update.zip system/app/BIP.apk -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+unzip -j -o ../../../${DEVICE}_update.zip system/app/SDM.apk -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+unzip -j -o ../../../${DEVICE}_update.zip system/app/SyncMLSvc.apk -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 unzip -j -o ../../../${DEVICE}_update.zip system/lib/libsecril-client.so -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+unzip -j -o ../../../${DEVICE}_update.zip system/lib/libsyncml_core.so -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+unzip -j -o ../../../${DEVICE}_update.zip system/lib/libsyncml_port.so -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 unzip -j -o ../../../${DEVICE}_update.zip system/lib/lib_gsd4t.so -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 unzip -j -o ../../../${DEVICE}_update.zip system/vendor/bin/pvrsrvinit -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 chmod 755 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/pvrsrvinit
@@ -69,6 +73,8 @@ PRODUCT_COPY_FILES := \\
 # All the blobs necessary for toro
 PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libsecril-client.so:system/lib/libsecril-client.so \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libsyncml_core.so:system/lib/libsyncml_core.so \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libsyncml_port.so:system/lib/libsyncml_port.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/lib_gsd4t.so:system/lib/lib_gsd4t.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/pvrsrvinit:system/vendor/bin/pvrsrvinit \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/sirfgps.conf:system/vendor/etc/sirfgps.conf \\
@@ -93,7 +99,9 @@ PRODUCT_COPY_FILES += \\
 
 # All the apks necessary for toro
 PRODUCT_PACKAGES += \\
-    BIP
+    BIP \\
+    SDM \\
+    SyncMLSvc
 
 EOF
 
@@ -124,6 +132,30 @@ LOCAL_PATH:=\$(call my-dir)
 include \$(CLEAR_VARS)
 
 LOCAL_MODULE := BIP
+LOCAL_SRC_FILES := \$(LOCAL_MODULE).apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_TAGS := optional
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
+include \$(BUILD_PREBUILT)
+
+# SDM
+
+include \$(CLEAR_VARS)
+
+LOCAL_MODULE := SDM
+LOCAL_SRC_FILES := \$(LOCAL_MODULE).apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_TAGS := optional
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
+include \$(BUILD_PREBUILT)
+
+# SyncMLSvc
+
+include \$(CLEAR_VARS)
+
+LOCAL_MODULE := SyncMLSvc
 LOCAL_SRC_FILES := \$(LOCAL_MODULE).apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
