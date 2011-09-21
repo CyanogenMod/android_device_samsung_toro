@@ -23,7 +23,8 @@ DEVICE_PACKAGE_OVERLAYS := device/samsung/toro/overlay
 PRODUCT_COPY_FILES += \
 	device/samsung/toro/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
 	device/sample/etc/apns-conf_verizon.xml:system/etc/apns-conf.xml \
-	frameworks/base/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
+	frameworks/base/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
+	device/samsung/toro/init.tuna.usb.rc:root/init.tuna.usb.rc
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.config.vc_call_vol_steps=7
