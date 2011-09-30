@@ -16,6 +16,7 @@ LOCAL_PATH := vendor/samsung/toro
 
 # Samsung blob(s) necessary for toro hardware
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/fRom:system/bin/fRom \
     $(LOCAL_PATH)/proprietary/lib_gsd4t.so:system/lib/lib_gsd4t.so \
     $(LOCAL_PATH)/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
     $(LOCAL_PATH)/proprietary/libsyncml_core.so:system/lib/libsyncml_core.so \
