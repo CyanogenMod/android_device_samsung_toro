@@ -24,6 +24,8 @@ unzip -j -o ../../../${DEVICE}_update.zip system/app/BIP.apk -d ../../../vendor/
 unzip -j -o ../../../${DEVICE}_update.zip system/app/IMSFramework.apk -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 unzip -j -o ../../../${DEVICE}_update.zip system/app/SDM.apk -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 unzip -j -o ../../../${DEVICE}_update.zip system/app/SyncMLSvc.apk -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+unzip -j -o ../../../${DEVICE}_update.zip system/bin/fRom -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+chmod 755 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/fRom
 unzip -j -o ../../../${DEVICE}_update.zip system/lib/libsecril-client.so -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 unzip -j -o ../../../${DEVICE}_update.zip system/lib/libsyncml_core.so -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 unzip -j -o ../../../${DEVICE}_update.zip system/lib/libsyncml_port.so -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
@@ -75,6 +77,7 @@ PRODUCT_COPY_FILES := \\
 
 # All the blobs necessary for toro
 PRODUCT_COPY_FILES += \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/fRom:system/bin/fRom \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libsecril-client.so:system/lib/libsecril-client.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libsyncml_core.so:system/lib/libsyncml_core.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libsyncml_port.so:system/lib/libsyncml_port.so \\

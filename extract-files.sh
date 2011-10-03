@@ -24,6 +24,8 @@ adb pull /system/app/BIP.apk ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/B
 adb pull /system/app/IMSFramework.apk ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/IMSFramework.apk
 adb pull /system/app/SDM.apk ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/SDM.apk
 adb pull /system/app/SyncMLSvc.apk ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/SyncMLSvc.apk
+adb pull /system/bin/fRom ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/fRom
+chmod 755 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/fRom
 adb pull /system/lib/libsecril-client.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libsecril-client.so
 adb pull /system/lib/libsyncml_core.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libsyncml_core.so
 adb pull /system/lib/libsyncml_port.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libsyncml_port.so
@@ -75,6 +77,7 @@ PRODUCT_COPY_FILES := \\
 
 # All the blobs necessary for toro
 PRODUCT_COPY_FILES += \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/fRom:system/bin/fRom \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libsecril-client.so:system/lib/libsecril-client.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libsyncml_core.so:system/lib/libsyncml_core.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libsyncml_port.so:system/lib/libsyncml_port.so \\
