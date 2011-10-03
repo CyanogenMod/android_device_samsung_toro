@@ -8,3 +8,7 @@ telephony.lteOnCdmaDevice=1
 
 # Ril sends only one RIL_UNSOL_CALL_RING, so set call_ring.multiple to false
 ro.telephony.call_ring.multiple=0
+
+# Turn on IMS by default
+persist.radio.imsregrequired=1
+persist.radio.imsallowmtsms=1
