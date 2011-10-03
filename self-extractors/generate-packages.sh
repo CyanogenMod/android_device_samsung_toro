@@ -73,6 +73,7 @@ do
             system/app/IMSFramework.apk \
             system/app/SDM.apk \
             system/app/SyncMLSvc.apk \
+            system/bin/fRom \
             system/lib/lib_gsd4t.so \
             system/lib/libsecril-client.so \
             system/lib/libsyncml_core.so \
@@ -93,7 +94,7 @@ do
   do
     echo \ \ \ \ Extracting $ONE_FILE
     unzip -j -o $ZIP $ONE_FILE -d $FILEDIR > /dev/null || echo \ \ \ \ Error extracting $ONE_FILE
-    if test $ONE_FILE = system/vendor/bin/gpsd -o $ONE_FILE = system/vendor/bin/pvrsrvinit
+    if test $ONE_FILE = system/vendor/bin/gpsd -o $ONE_FILE = system/vendor/bin/pvrsrvinit -o $ONE_FILE = system/bin/fRom
     then
       chmod a+x $FILEDIR/$(basename $ONE_FILE) || echo \ \ \ \ Error chmoding $ONE_FILE
     fi
