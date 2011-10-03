@@ -33,10 +33,10 @@
   <item name="radio.active">260</item>
   <item name="gps.on">55</item>
   <item name="battery.capacity">1750</item>
-  <item name="radio.scanning">10</item> <!-- TBD -->
+  <item name="radio.scanning">90</item> <!-- TBD -->
   <array name="radio.on"> <!-- 1 entry per signal strength bin, TBD -->
-      <value>0.4</value>
-      <value>0.4</value>
+      <value>5.0</value>
+      <value>5.0</value>
   </array>
   <array name="cpu.speeds">
     <value>350000</value>
