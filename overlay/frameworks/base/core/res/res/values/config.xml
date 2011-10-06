@@ -46,4 +46,6 @@
         <item>"mobile_cbs,12,0,2,60000,true"</item>
     </string-array>
 
+    <string translatable="false" name="config_mobile_hotspot_provision_intent">android.com.sec.spg.ACTION_SPG_PROVISIONING</string>
+
 </resources>
