@@ -15,8 +15,9 @@
 # limitations under the License.
 
 # 189728 = IRK82
-ZIP=mysid-ota-189728.zip
-BUILD=irk82
+# 201178 = IRL10B
+ZIP=mysid-ota-201178.zip
+BUILD=irl10b
 ROOTDEVICE=toro
 DEVICE=toro
 MANUFACTURER=samsung
@@ -72,6 +73,7 @@ do
             system/app/BIP.apk \
             system/app/IMSFramework.apk \
             system/app/SDM.apk \
+            system/app/SPG.apk \
             system/app/SyncMLSvc.apk \
             system/bin/fRom \
             system/lib/lib_gsd4t.so \
