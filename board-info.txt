@@ -1,5 +1,5 @@
 require board=tuna
 require version-bootloader=PRIMEKJ01
-require version-baseband=I515.EJ03
+require version-baseband=I515.EJ07
 require version-cdma=I515.EJ04
 
