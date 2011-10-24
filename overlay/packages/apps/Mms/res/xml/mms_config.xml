@@ -82,5 +82,8 @@
 
     <!-- Number of sms segments before turning the long message into an mms -->
     <int name="smsToMmsTextThreshold">8</int>
+
+    <!-- Maximum length in chars of mms subject field -->
+    <int name="maxSubjectLength">80</int>
 </mms_config>
 
