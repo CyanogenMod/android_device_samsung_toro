@@ -16,8 +16,9 @@
 
 # 189728 = IRK82
 # 201178 = IRL10B
-ZIP=mysid-ota-201178.zip
-BUILD=irl10b
+# 213821 = ICL26
+ZIP=mysid-ota-213821.zip
+BUILD=icl26
 ROOTDEVICE=toro
 DEVICE=toro
 MANUFACTURER=samsung
