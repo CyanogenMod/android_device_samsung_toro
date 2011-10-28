@@ -1,4 +1,4 @@
-# BCM4330 B2 FCBGA SS Proxima VZW Rev.07
+# BCM4330 B2 FCBGA SS Proxima VZW Rev.09 10/26/2011 Calibrated verified with 125.84.4
 manfid=0x2d0
 prodid=0x0532
 vendid=0x14e4
@@ -17,9 +17,9 @@ aa2g=1
 aa5g=1
 ccode=US
 # 2.4GHz PA parameters are preliminary
-pa0b0=0x1421
-pa0b1=0xFDBA
-pa0b2=0xFF6E
+pa0b0=0x1491
+pa0b1=0xFD9D
+pa0b2=0xFF64
 cckPwrOffset=4
 # rssi params for 2.4GHz
 rssismf2g=0xa
@@ -30,17 +30,17 @@ rssismf5g=0xa
 rssismc5g=0x7
 rssisav5g=0x1
 #PA parameters for lower a-band: CH.36 (5180M) - CH.64 (5320M)
-pa1lob0=0x162D
-pa1lob1=0xFD71
-pa1lob2=0xFF6F
+pa1lob0=0x15B9
+pa1lob1=0xFD9D
+pa1lob2=0xFF59
 #PA parameters for midband: CH.100 (5500M) - CH.140 (5700M)
-pa1b0=0x1617
-pa1b1=0xFD61
-pa1b2=0xFF64
+pa1b0=0x15C5
+pa1b1=0xFD5D
+pa1b2=0xFF54
 #PA parameters for high band: CH.149 (5745M) - CH.165 (5825M)
-pa1hib0=0x1655
-pa1hib1=0xFD74
-pa1hib2=0xFF75
+pa1hib0=0x158E
+pa1hib1=0xFD54
+pa1hib2=0xFF49
 sromrev=3
 # 2.4G Tx Power: 17/14/13
 maxp2ga0=74
@@ -99,9 +99,9 @@ sd_gpout=0
 # sd_oobonly=1
 muxenab=0x10
 
-#btc_params8=10000
-#btc_params80=0
-#btc_params6=10
+btc_params8=10000
+btc_params80=0
+btc_params6=10
 
 # 5G +/-160MHz Spur
 txgaintbl5g=1
