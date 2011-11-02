@@ -46,6 +46,11 @@
         <item>"mobile_cbs,12,0,2,60000,true"</item>
     </string-array>
 
-    <string translatable="false" name="config_mobile_hotspot_provision_intent">android.com.sec.spg.ACTION_SPG_PROVISIONING</string>
+    <!-- The first element is the package name and the second element is the class name
+         of the provisioning app -->
+    <string-array translatable="false" name="config_mobile_hotspot_provision_app">
+        <item>"com.samsung.spg"</item>
+        <item>"com.samsung.spg.NewSPGActivity"</item>
+    </string-array>
 
 </resources>
