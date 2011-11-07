@@ -16,6 +16,7 @@ ag0=0
 aa2g=1
 aa5g=1
 ccode=US
+regrev=69
 # 2.4GHz PA parameters are preliminary
 pa0b0=0x1491
 pa0b1=0xFD9D
