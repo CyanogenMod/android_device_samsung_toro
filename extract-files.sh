@@ -22,6 +22,7 @@ MANUFACTURER=samsung
 mkdir -p ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 adb pull /system/app/BIP.apk ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/BIP.apk
 adb pull /system/app/IMSFramework.apk ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/IMSFramework.apk
+adb pull /system/app/RTN.apk ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/RTN.apk
 adb pull /system/app/SDM.apk ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/SDM.apk
 adb pull /system/app/SPG.apk ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/SPG.apk
 adb pull /system/app/SyncMLSvc.apk ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/SyncMLSvc.apk
@@ -110,6 +111,7 @@ PRODUCT_COPY_FILES += \\
 PRODUCT_PACKAGES += \\
     BIP \\
     IMSFramework \\
+    RTN \\
     SDM \\
     SPG \\
     SyncMLSvc
@@ -155,6 +157,18 @@ include \$(BUILD_PREBUILT)
 include \$(CLEAR_VARS)
 
 LOCAL_MODULE := IMSFramework
+LOCAL_SRC_FILES := \$(LOCAL_MODULE).apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_TAGS := optional
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
+include \$(BUILD_PREBUILT)
+
+# RTN
+
+include \$(CLEAR_VARS)
+
+LOCAL_MODULE := RTN
 LOCAL_SRC_FILES := \$(LOCAL_MODULE).apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
