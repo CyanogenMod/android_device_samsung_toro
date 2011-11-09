@@ -17,8 +17,9 @@
 # 189728 = IRK82
 # 201178 = IRL10B
 # 213821 = ICL26
-ZIP=mysid-ota-213821.zip
-BUILD=icl26
+# 221202 = ICL39
+ZIP=mysid-ota-221202.zip
+BUILD=icl39
 ROOTDEVICE=toro
 DEVICE=toro
 MANUFACTURER=samsung
@@ -73,6 +74,7 @@ do
     TO_EXTRACT="\
             system/app/BIP.apk \
             system/app/IMSFramework.apk \
+            system/app/RTN.apk \
             system/app/SDM.apk \
             system/app/SPG.apk \
             system/app/SyncMLSvc.apk \
