@@ -1,4 +1,4 @@
-# BCM4330 B2 FCBGA SS Proxima VZW Rev.09 10/26/2011 Calibrated verified with 125.84.4
+# BCM4330 B2 FCBGA SS Proxima VZW Rev1.1 11/28/2011 Calibrated verified with 125.84.4 // BT Choppy issue fixed
 manfid=0x2d0
 prodid=0x0532
 vendid=0x14e4
@@ -31,16 +31,16 @@ rssismf5g=0xa
 rssismc5g=0x7
 rssisav5g=0x1
 #PA parameters for lower a-band: CH.36 (5180M) - CH.64 (5320M)
-pa1lob0=0x15B9
-pa1lob1=0xFD9D
+pa1lob0=0x14B9
+pa1lob1=0xFD79
 pa1lob2=0xFF59
 #PA parameters for midband: CH.100 (5500M) - CH.140 (5700M)
-pa1b0=0x15C5
-pa1b1=0xFD5D
+pa1b0=0x14C5
+pa1b1=0xFD72
 pa1b2=0xFF54
 #PA parameters for high band: CH.149 (5745M) - CH.165 (5825M)
-pa1hib0=0x158E
-pa1hib1=0xFD54
+pa1hib0=0x148E
+pa1hib1=0xFD6B
 pa1hib2=0xFF49
 sromrev=3
 # 2.4G Tx Power: 17/14/13
@@ -49,9 +49,9 @@ ofdm2gpo=0x66666666
 mcs2gpo0=0x8888
 mcs2gpo1=0x8888
 # 5G Tx Power: 14/13
-maxp5ga0=80
-maxp5gla0=84
-maxp5gha0=78
+maxp5ga0=74
+maxp5gla0=74
+maxp5gha0=74
 ofdm5gpo=0x66666666
 ofdm5glpo=0x66666666
 ofdm5ghpo=0x66666666
