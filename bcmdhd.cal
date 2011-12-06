@@ -109,3 +109,6 @@ txgaintbl5g=1
 
 # 5G 1.7G Spur
 loidacmode5g=1
+
+# 2.4G ACR
+rxgaintbl100=1
