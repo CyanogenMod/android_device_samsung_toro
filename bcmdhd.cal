@@ -1,4 +1,4 @@
-# BCM4330 B2 FCBGA SS Proxima VZW Rev1.1 11/28/2011 Calibrated verified with 125.84.4 // BT Choppy issue fixed
+# BCM4330 B2 FCBGA SS Proxima VZW Rev1.1 12/08/2011 Calibrated verified with 125.84.4 //
 manfid=0x2d0
 prodid=0x0532
 vendid=0x14e4
@@ -112,3 +112,6 @@ loidacmode5g=1
 
 # 2.4G ACR
 rxgaintbl100=1
+
+# 5GHz Starting Tx Gain Index
+initxidx5g=96
