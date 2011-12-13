@@ -19,8 +19,9 @@
 # 213821 = ICL26
 # 221202 = ICL39
 # 236517 = IML70C
-ZIP=mysid-ota-236517.zip
-BUILD=iml70c
+# 237179 = IML73
+ZIP=mysid-ota-237179.zip
+BUILD=iml73
 ROOTDEVICE=toro
 DEVICE=toro
 MANUFACTURER=samsung
