@@ -15,3 +15,4 @@
 #
 
 add_lunch_combo full_toro-userdebug
+add_lunch_combo full_toro-eng
