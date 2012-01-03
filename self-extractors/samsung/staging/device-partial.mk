@@ -12,10 +12,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := vendor/csr/toro
-
-# CSR blob(s) necessary for Toro hardware
-PRODUCT_COPY_FILES := \
-    $(LOCAL_PATH)/proprietary/sirfgps.conf:system/vendor/etc/sirfgps.conf \
-    $(LOCAL_PATH)/proprietary/gps.omap4.so:system/vendor/lib/hw/gps.omap4.so \
-
+# Samsung blob(s) necessary for Toro hardware
+PRODUCT_PACKAGES := \
+    BIP \
+    IMSFramework \
+    RTN \
+    SDM \
+    SPG \
+    SyncMLSvc \
+    fRom \
+    libsecril-client \
+    libsyncml_core \
+    libsyncml_port \
+    lib_gsd4t \
+    libims \
+    libims_jni \
+    libsec-ril_lte

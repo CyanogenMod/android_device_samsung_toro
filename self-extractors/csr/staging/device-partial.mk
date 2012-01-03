@@ -12,9 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := vendor/broadcom/toro
-
-# Broadcom blob(s) necessary for Toro hardware
-PRODUCT_COPY_FILES := \
-    $(LOCAL_PATH)/proprietary/bcm4330.hcd:system/vendor/firmware/bcm4330.hcd \
-
+# CSR blob(s) necessary for Toro hardware
+PRODUCT_PACKAGES := \
+    sirfgps \
+    gps.omap4

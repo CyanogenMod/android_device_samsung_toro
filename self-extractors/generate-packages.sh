@@ -24,8 +24,9 @@
 # 238432 = IML74E
 # 238649 = IML74G
 # 239410 = IML74K
-ZIP=mysid-ota-239410.zip
-BUILD=iml74k
+# 241968 = IRM03
+ZIP=mysid-ota-241968.zip
+BUILD=irm03
 ROOTDEVICE=toro
 DEVICE=toro
 MANUFACTURER=samsung
@@ -85,12 +86,12 @@ do
             system/app/SPG.apk \
             system/app/SyncMLSvc.apk \
             system/bin/fRom \
-            system/lib/lib_gsd4t.so \
             system/lib/libsecril-client.so \
             system/lib/libsyncml_core.so \
             system/lib/libsyncml_port.so \
-            system/vendor/lib/libims_jni.so \
+            system/lib/lib_gsd4t.so \
             system/vendor/lib/libims.so \
+            system/vendor/lib/libims_jni.so \
             system/vendor/lib/libsec-ril_lte.so \
             "
     ;;

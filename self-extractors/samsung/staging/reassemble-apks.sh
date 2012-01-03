@@ -17,7 +17,11 @@
 java -jar $(find out/host -name signapk.jar) build/target/product/security/platform.x509.pem build/target/product/security/platform.pk8 vendor/samsung/toro/proprietary/BIP.unsigned.apk vendor/samsung/toro/proprietary/BIP.apk
 (cd vendor/samsung/toro/proprietary/IMSFramework.apk.parts ; zip -r ../IMSFramework.unsigned.apk .)
 java -jar $(find out/host -name signapk.jar) build/target/product/security/platform.x509.pem build/target/product/security/platform.pk8 vendor/samsung/toro/proprietary/IMSFramework.unsigned.apk vendor/samsung/toro/proprietary/IMSFramework.apk
+(cd vendor/samsung/toro/proprietary/RTN.apk.parts ; zip -r ../RTN.unsigned.apk .)
+java -jar $(find out/host -name signapk.jar) build/target/product/security/platform.x509.pem build/target/product/security/platform.pk8 vendor/samsung/toro/proprietary/RTN.unsigned.apk vendor/samsung/toro/proprietary/RTN.apk
 (cd vendor/samsung/toro/proprietary/SDM.apk.parts ; zip -r ../SDM.unsigned.apk .)
 java -jar $(find out/host -name signapk.jar) build/target/product/security/platform.x509.pem build/target/product/security/platform.pk8 vendor/samsung/toro/proprietary/SDM.unsigned.apk vendor/samsung/toro/proprietary/SDM.apk
+(cd vendor/samsung/toro/proprietary/SPG.apk.parts ; zip -r ../SPG.unsigned.apk .)
+java -jar $(find out/host -name signapk.jar) build/target/product/security/platform.x509.pem build/target/product/security/platform.pk8 vendor/samsung/toro/proprietary/SPG.unsigned.apk vendor/samsung/toro/proprietary/SPG.apk
 (cd vendor/samsung/toro/proprietary/SyncMLSvc.apk.parts ; zip -r ../SyncMLSvc.unsigned.apk .)
 java -jar $(find out/host -name signapk.jar) build/target/product/security/platform.x509.pem build/target/product/security/platform.pk8 vendor/samsung/toro/proprietary/SyncMLSvc.unsigned.apk vendor/samsung/toro/proprietary/SyncMLSvc.apk

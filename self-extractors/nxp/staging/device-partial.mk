@@ -12,12 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_STEM := toro/BoardConfigPartial.mk
-
--include vendor/broadcom/$(LOCAL_STEM)
--include vendor/csr/$(LOCAL_STEM)
--include vendor/imgtec/$(LOCAL_STEM)
--include vendor/invensense/$(LOCAL_STEM)
--include vendor/nxp/$(LOCAL_STEM)
--include vendor/samsung/$(LOCAL_STEM)
--include vendor/ti/$(LOCAL_STEM)
+# NXP blob(s) necessary for Toro hardware
+PRODUCT_PACKAGES := \
+    libpn544_fw
