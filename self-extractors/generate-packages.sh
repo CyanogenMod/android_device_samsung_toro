@@ -24,19 +24,22 @@
 # 238432 = IML74E
 # 238649 = IML74G
 # 239410 = IML74K
-ZIP=mysid-ota-239410.zip
-BUILD=iml74k
+# 243892 = IMM06
+ZIP=mysid-ota-243892.zip
+BUILD=imm06
 ROOTDEVICE=toro
 DEVICE=toro
 MANUFACTURER=samsung
+VARIANT=vzw
 
-for COMPANY in broadcom csr imgtec invensense nxp samsung ti
+for COMPANY in broadcom csr imgtec invensense nxp samsung_$VARIANT ti
 do
   echo Processing files from $COMPANY
   rm -rf tmp
   FILEDIR=tmp/vendor/$COMPANY/$DEVICE/proprietary
   mkdir -p $FILEDIR
   mkdir -p tmp/vendor/$MANUFACTURER/$ROOTDEVICE
+  mkdir -p tmp/vendor/$MANUFACTURER/${ROOTDEVICE}_$VARIANT
   case $COMPANY in
   broadcom)
     TO_EXTRACT="\
@@ -76,7 +79,25 @@ do
             system/vendor/firmware/libpn544_fw.so \
             "
     ;;
-  samsung)
+  samsung_spr)
+    TO_EXTRACT="\
+            system/app/BIP.apk \
+            system/app/IMSFramework.apk \
+            system/app/RTN.apk \
+            system/app/SDM.apk \
+            system/app/SPG.apk \
+            system/app/SyncMLSvc.apk \
+            system/bin/fRom \
+            system/lib/lib_gsd4t.so \
+            system/lib/libsecril-client.so \
+            system/lib/libsyncml_core.so \
+            system/lib/libsyncml_port.so \
+            system/vendor/lib/libims_jni.so \
+            system/vendor/lib/libims.so \
+            system/vendor/lib/libsec-ril_lte.so \
+            "
+    ;;
+  samsung_vzw)
     TO_EXTRACT="\
             system/app/BIP.apk \
             system/app/IMSFramework.apk \
@@ -122,6 +143,7 @@ do
   cp -R $COMPANY/staging/* tmp/vendor/$COMPANY/$DEVICE || echo \ \ \ \ Error copying makefiles
   echo \ \ Setting up shared makefiles
   cp -R root/* tmp/vendor/$MANUFACTURER/$ROOTDEVICE || echo \ \ \ \ Error copying makefiles
+  cp -R root_$VARIANT/* tmp/vendor/$MANUFACTURER/${ROOTDEVICE}_$VARIANT || echo \ \ \ \ Error copying makefiles
   echo \ \ Generating self-extracting script
   SCRIPT=extract-$COMPANY-$DEVICE.sh
   cat PROLOGUE > tmp/$SCRIPT || echo \ \ \ \ Error generating script

@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := vendor/samsung/toro
+LOCAL_PATH := vendor/samsung_vzw/toro
 
 # Samsung blob(s) necessary for toro hardware
 PRODUCT_COPY_FILES += \

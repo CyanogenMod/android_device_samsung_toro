@@ -11,13 +11,3 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-LOCAL_STEM := toro/device-toro.mk
-
-$(call inherit-product-if-exists, vendor/broadcom/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/csr/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/imgtec/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/invensense/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/nxp/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/samsung/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/ti/$(LOCAL_STEM))
