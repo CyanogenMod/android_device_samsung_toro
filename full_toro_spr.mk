@@ -37,11 +37,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # This is where we'd set a backup provider if we had one
 #$(call inherit-product, device/sample/products/backup_overlay.mk)
 # Inherit from toro device
-$(call inherit-product, device/samsung/toro/device_vzw.mk)
+$(call inherit-product, device/samsung/toro/device_spr.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_toro
+PRODUCT_NAME := full_toro_spr
 PRODUCT_DEVICE := toro
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := Full AOSP on Toro-VZW
-PRODUCT_RESTRICT_VENDOR_FILES := true
+PRODUCT_MODEL := Full AOSP on Toro-SPR
