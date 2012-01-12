@@ -37,6 +37,14 @@ adb pull /system/lib/libsecril-client.so ../../../vendor/$MANUFACTURER/$DEVICE/p
 adb pull /system/lib/libsyncml_core.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libsyncml_core.so
 adb pull /system/lib/libsyncml_port.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libsyncml_port.so
 adb pull /system/lib/lib_gsd4t.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/lib_gsd4t.so
+adb pull /system/media/LMprec_508.emd ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/LMprec_508.emd
+adb pull /system/media/PFFprec_600.emd ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/PFFprec_600.emd
+adb pull /system/media/video/AndroidInSpace.240p.mp4 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/AndroidInSpace.240p.mp4
+adb pull /system/media/video/AndroidInSpace.480p.mp4 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/AndroidInSpace.480p.mp4
+adb pull /system/media/video/Disco.240p.mp4 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/Disco.240p.mp4
+adb pull /system/media/video/Disco.480p.mp4 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/Disco.480p.mp4
+adb pull /system/media/video/Sunset.240p.mp4 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/Sunset.240p.mp4
+adb pull /system/media/video/Sunset.480p.mp4 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/Sunset.480p.mp4
 adb pull /system/vendor/bin/pvrsrvinit ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/pvrsrvinit
 chmod 755 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/pvrsrvinit
 adb pull /system/vendor/etc/sirfgps.conf ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/sirfgps.conf
@@ -60,6 +68,7 @@ adb pull /system/vendor/lib/libsec-ril_lte.so ../../../vendor/$MANUFACTURER/$DEV
 adb pull /system/vendor/lib/libsrv_init.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libsrv_init.so
 adb pull /system/vendor/lib/libsrv_um.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libsrv_um.so
 adb pull /system/vendor/lib/libusc.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libusc.so
+
 
 (cat << EOF) | sed s/__DEVICE__/$DEVICE/g | sed s/__MANUFACTURER__/$MANUFACTURER/g > ../../../vendor/$MANUFACTURER/$DEVICE/device-vendor-blobs.mk
 # Copyright (C) 2010 The Android Open Source Project
@@ -92,6 +101,14 @@ PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libsyncml_core.so:system/lib/libsyncml_core.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libsyncml_port.so:system/lib/libsyncml_port.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/lib_gsd4t.so:system/lib/lib_gsd4t.so \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/LMprec_508.emd:system/media/LMprec_508.emd \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/PFFprec_600.emd:system/media/PFFprec_600.emd \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/AndroidInSpace.240p.mp4:system/media/video/AndroidInSpace.240p.mp4 \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/AndroidInSpace.480p.mp4:system/media/video/AndroidInSpace.480p.mp4 \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/Disco.240p.mp4:system/media/video/Disco.240p.mp4 \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/Disco.480p.mp4:system/media/video/Disco.480p.mp4 \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/Sunset.240p.mp4:system/media/video/Sunset.240p.mp4 \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/Sunset.480p.mp4:system/media/video/Sunset.480p.mp4 \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/pvrsrvinit:system/vendor/bin/pvrsrvinit \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/sirfgps.conf:system/vendor/etc/sirfgps.conf \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/bcm4330.hcd:system/vendor/firmware/bcm4330.hcd \\
