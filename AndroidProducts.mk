@@ -15,5 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_toro.mk \
-    $(LOCAL_DIR)/full_toro_spr.mk
+    $(LOCAL_DIR)/full_toro.mk
