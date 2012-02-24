@@ -24,10 +24,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/libims_jni.so:system/vendor/lib/libims_jni.so \
     $(LOCAL_PATH)/proprietary/libims.so:system/vendor/lib/libims.so \
     $(LOCAL_PATH)/proprietary/libsec-ril_lte.so:system/vendor/lib/libsec-ril_lte.so \
+    $(LOCAL_PATH)/proprietary/com.vzw.hardware.ehrpd.xml:system/etc/permissions/com.vzw.hardware.ehrpd.xml \
+    $(LOCAL_PATH)/proprietary/com.vzw.hardware.lte.xml:system/etc/permissions/com.vzw.hardware.lte.xml \
+    $(LOCAL_PATH)/proprietary/com.vzw.vzwapnlib.xml:system/etc/permissions/com.vzw.vzwapnlib.xml \
 
 PRODUCT_PACKAGES += \
     BIP \
     IMSFramework \
     SDM \
     SyncMLSvc \
-
+    VZWAPNLib \
+    VZWAPNService \
