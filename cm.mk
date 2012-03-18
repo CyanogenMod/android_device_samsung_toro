@@ -1,6 +1,9 @@
 # Release name
 PRODUCT_RELEASE_NAME := GN-CDMA
 
+# Bootanimation
+TARGET_BOOTANIMATION_NAME := vertical-720x1280
+
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
