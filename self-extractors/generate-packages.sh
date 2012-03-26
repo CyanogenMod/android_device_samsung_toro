@@ -26,8 +26,8 @@
 # 239410 = IML74K
 # 243892 = IMM06
 # 262866 = IMM30D
-ZIP=mysid-ota-262866.zip
-BUILD=imm30d
+ZIP=mysid-ota-239410.zip
+BUILD=iml74k
 ROOTDEVICE=toro
 DEVICE=toro
 MANUFACTURER=samsung
