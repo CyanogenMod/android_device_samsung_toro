@@ -10,6 +10,9 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 # Inherit device configuration
 $(call inherit-product, device/samsung/toro/full_toro.mk)
 
+# Enhanced NFC
+$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := toro
 PRODUCT_NAME := cm_toro
