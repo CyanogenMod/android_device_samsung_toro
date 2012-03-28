@@ -26,9 +26,21 @@
 # 239410 = IML74K
 # 262866 = IMM30D
 # 299849 = IMM76D
+# end ics-mr1
+# start jellybean
 # 241968 = IRM03
-ZIP=mysid-ota-241968.zip
-BUILD=irm03
+# end jellybean
+BRANCH=jellybean
+if test $BRANCH=ics-mr1
+then
+  ZIP=mysid-ota-299849.zip
+  BUILD=imm76d
+fi #ics-mr1
+if test $BRANCH=jellybean
+then
+  ZIP=mysid-ota-241968.zip
+  BUILD=irm03
+fi # jellybean
 ROOTDEVICE=toro
 DEVICE=toro
 MANUFACTURER=samsung
