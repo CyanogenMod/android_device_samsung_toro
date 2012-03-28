@@ -27,8 +27,13 @@
 # 243892 = IMM06
 # 262866 = IMM30D
 # 299849 = IMM76D
-ZIP=mysid-ota-299849.zip
-BUILD=imm76d
+# end ics-mr1
+BRANCH=ics-mr1
+if test $BRANCH=ics-mr1
+then
+  ZIP=mysid-ota-299849.zip
+  BUILD=imm76d
+fi #ics-mr1
 ROOTDEVICE=toro
 DEVICE=toro
 MANUFACTURER=samsung
