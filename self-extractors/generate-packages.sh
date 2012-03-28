@@ -82,6 +82,7 @@ do
   samsung)
     TO_EXTRACT="\
             system/app/BIP.apk \
+            system/app/CellBroadcastReceiver.apk \
             system/app/IMSFramework.apk \
             system/app/RTN.apk \
             system/app/SDM.apk \
