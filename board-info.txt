@@ -1,4 +1,4 @@
 require board=tuna
-require version-bootloader=PRIMEKK15|PRIMEKL01|PRIMELA03
-require version-baseband=I515.EK02|I515.EK04|I515.FC03
-require version-cdma=I515.EK05|I515.EK06|I515.FA04
+require version-bootloader=PRIMELA03
+require version-baseband=I515.FC03
+require version-cdma=I515.FA04
