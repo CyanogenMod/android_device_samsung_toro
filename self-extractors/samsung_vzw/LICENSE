@@ -1,5 +1,5 @@
 THIS DEVELOPER SOFTWARE LICENSE AGREEMENT (THE "AGREEMENT") IS A LEGALLY
-BINDING AGREEMENT BETWEEN BROADCOM CORPORATION ("LICENSOR") AND
+BINDING AGREEMENT BETWEEN Samsung Electronics ("LICENSOR") AND
 YOU OR THE LEGAL ENTITY YOU REPRESENT ("You" or its possessive, "Your"). BY
 TYPING "I ACCEPT" WHERE INDICATED YOU ACKNOWLEDGE THAT YOU HAVE READ THIS
 AGREEMENT, UNDERSTAND IT AND AGREE TO BE BOUND BY ITS TERMS AND CONDITIONS. IF
@@ -22,7 +22,7 @@ CONDITIONS OF THIS AGREEMENT.
           open-source contribution developed by You, designed to operate with
           Android that does not contain or incorporate any of the Software.
 
-      c.  The term "Authorized Android Enabled Device" means the device
+      c.  The term "Authorized Android Enabled Device" means only the device
           identified on the site from which You downloaded the Software.
           The term "Software" means the Licensor's proprietary software and
           libraries in object code form, designed for use on the Authorized
@@ -85,10 +85,7 @@ CONDITIONS OF THIS AGREEMENT.
           parties acting on Your behalf. You and any such third party shall
           comply with all of the terms and conditions of this Agreement.
 
-      c.  No Reverse Engineering. Except for any portions of the Software
-          provided to You in source code format and except for any third party
-          code distributed with the Software that is licensed under contrary
-          terms, You will not reverse engineer, disassemble,
+      c.  No Reverse Engineering. You will not reverse engineer, disassemble,
           decompile, or translate the Software, or otherwise attempt to derive
           the source code version of the Software, except if and to the extent
           expressly permitted under any applicable law.
@@ -102,7 +99,17 @@ CONDITIONS OF THIS AGREEMENT.
           obligations under this Agreement. Any attempted assignment in
           contravention of this Section shall be void.
 
-   4.  Indemnity
+   4.  Onwership of Intellectual Property
+
+      a.  You acknowledge that all intellectual property rights in or relating
+          to the Software and all parts of the Software are and shall remain
+          the exclusive property of Licensor and its licensors. You agree that
+          you will not remove or alter any copyright notices or similar
+          proprietary devices, including without limitation any electronic
+          watermarks or other identifiers, that may be incorporated in the
+          Software.
+
+   5.  Indemnity
 
       a.  You agree to indemnify and hold harmless Licensor and its officers,
           directors, customers, employees and successors and assigns (each an
@@ -124,7 +131,7 @@ CONDITIONS OF THIS AGREEMENT.
           or causes of action resulting from, arising out of or in connection
           with any of the foregoing.
 
-   5.  Limitation of Liability
+   6.  Limitation of Liability
 
       a.  TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAWS, UNDER NO
           CIRCUMSTANCES, INCLUDING WITHOUT LIMITATION NEGLIGENCE, SHALL
@@ -148,7 +155,7 @@ CONDITIONS OF THIS AGREEMENT.
           FOREGOING LIMITATIONS IN THIS PARAGRAPH ARE AN ESSENTIAL BASIS OF
           THE BARGAIN BETWEEN THE PARTIES.
 
-   6.  No Warranty
+   7.  No Warranty
 
       a.  LICENSOR MAKES NO WARRANTIES, EXPRESS OR IMPLIED, WITH RESPECT TO THE
           SOFTWARE AND DOCUMENTATION PROVIDED UNDER THIS AGREEMENT, INCLUDING
@@ -166,7 +173,7 @@ CONDITIONS OF THIS AGREEMENT.
           OF THIRD PARTIES. LICENSOR SHALL NOT HAVE ANY OBLIGATION TO PROVIDE
           ANY TECHNICAL SUPPORT OF THE SOFTWARE UNDER THIS AGREEMENT.
 
-   7.  Term and Termination
+   8.  Term and Termination
 
       a.  This Agreement shall be effective on the date You accept this
           Agreement and shall remain in effect until terminated as provided
@@ -181,7 +188,7 @@ CONDITIONS OF THIS AGREEMENT.
           terminate. Sections 3, 4, 5, 6 and 8 shall survive the termination of
           this Agreement.
 
-   8.  Miscellaneous
+   9.  Miscellaneous
 
       a.  Governing Law. This Agreement is governed and interpreted in
           accordance with the laws of the State of California without giving
