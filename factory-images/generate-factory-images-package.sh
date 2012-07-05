@@ -18,13 +18,14 @@
 # 235179 = ICL53F
 # 299849 = IMM76D
 # 336647 = IMM76K
-# 397360 = JRO02D
+# 397360 = JRO02C
+# 398337 = JRO03C
 
 source ../../../common/clear-factory-images-variables.sh
 PRODUCT=mysid
 DEVICE=toro
-BUILD=397360
-VERSION=jro02c
+BUILD=398337
+VERSION=jro03c
 SRCPREFIX=signed-
 BOOTLOADER=primelc03
 RADIO=i515.ff03
