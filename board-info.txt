@@ -1,7 +1,1 @@
-# This is the open-source version of board-info.txt; it should contain
-# version of the radio and bootloader that are available to the
-# public.
 require board=tuna
-require version-bootloader=PRIMELA03|PRIMELC03
-require version-baseband=I515.FC05|I515.FF03
-require version-cdma=I515.FC04|I515.FF02
