@@ -12,12 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Default values, possibly overridden by BoardConfigVendor.mk
+TARGET_BOARD_INFO_FILE := device/samsung/toro/board-info.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/toro/bluetooth
+
 # Use the non-open-source part, if present
 -include vendor/samsung/toro/BoardConfigVendor.mk
 
 # Use the open-source board-info file if none was set by the vendor
 # config.
-TARGET_BOARD_INFO_FILE ?= device/samsung/toro/board-info.txt
 
 # Use the part that is common between all tunas
 include device/samsung/tuna/BoardConfig.mk
