@@ -2,7 +2,8 @@
 PRODUCT_RELEASE_NAME := GN-CDMA
 
 # Boot animation
-TARGET_BOOTANIMATION_NAME := vertical-720x1280
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
