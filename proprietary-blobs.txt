@@ -16,13 +16,19 @@
 
 /system/app/BIP.apk
 /system/app/CellBroadcastReceiver.apk
+/system/app/Gallery2.apk
 /system/app/IMSFramework.apk
+/system/app/Nfc.apk
 /system/app/RTN.apk
 /system/app/SDM.apk
 /system/app/SPG.apk
 /system/app/SyncMLSvc.apk
 /system/bin/fRom
+/system/etc/updatecmds/migrate_nfc.txt
 /system/lib/libdrmdecrypt.so
+/system/lib/libjni_eglfence.so
+/system/lib/libjni_mosaic.so
+/system/lib/libnfc_jni.so
 /system/lib/libsecril-client.so
 /system/lib/libsyncml_core.so
 /system/lib/libsyncml_port.so
