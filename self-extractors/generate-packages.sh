@@ -33,7 +33,10 @@
 # 398337 = JRO03C
 # 405518 = JRO03H
 # end jb-dev
-BRANCH=jb-dev
+# start jb-mr1-dev
+# 465036 = JOO75
+# end jb-mr1-dev
+BRANCH=jb-mr1-dev
 if test $BRANCH=ics-mr1
 then
   ZIP=mysid-ota-299849.zip
@@ -44,11 +47,16 @@ then
   ZIP=mysid-ota-405518.zip
   BUILD=jro03h
 fi # jb-dev
+if test $BRANCH=jb-mr1-dev
+then
+  ZIP=mysid-ota-465036.zip
+  BUILD=joo75
+fi # jb-mr1-dev
 ROOTDEVICE=toro
 DEVICE=toro
 MANUFACTURER=samsung
 
-for COMPANY in broadcom csr imgtec invensense nxp samsung ti
+for COMPANY in broadcom csr imgtec invensense nxp samsung ti widevine
 do
   echo Processing files from $COMPANY
   rm -rf tmp
@@ -59,6 +67,7 @@ do
   broadcom)
     TO_EXTRACT="\
             system/vendor/firmware/bcm4330.hcd \
+            system/vendor/lib/libbt-vendor.so \
             "
     ;;
   csr)
@@ -116,6 +125,11 @@ do
   ti)
     TO_EXTRACT="\
             system/vendor/firmware/ducati-m3.bin \
+            "
+    ;;
+  widevine)
+    TO_EXTRACT="\
+            system/lib/libdrmdecrypt.so \
             "
     ;;
   esac
