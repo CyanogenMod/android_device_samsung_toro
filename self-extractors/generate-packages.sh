@@ -32,6 +32,8 @@
 # 397816 = JRO03B
 # 398337 = JRO03C
 # 405518 = JRO03H
+# 438695 = JRO03R
+# 463694 = JZ054G
 # end jb-dev
 # start jb-mr1-dev
 # 465036 = JOO75
