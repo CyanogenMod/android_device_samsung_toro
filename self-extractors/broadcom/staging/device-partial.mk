@@ -14,5 +14,4 @@
 
 # Broadcom blob(s) necessary for Toro hardware
 PRODUCT_PACKAGES := \
-    bcm4330 \
-    libbt-vendor
+    bcm4330

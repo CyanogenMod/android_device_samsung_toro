@@ -69,7 +69,6 @@ do
   broadcom)
     TO_EXTRACT="\
             system/vendor/firmware/bcm4330.hcd \
-            system/vendor/lib/libbt-vendor.so \
             "
     ;;
   csr)
