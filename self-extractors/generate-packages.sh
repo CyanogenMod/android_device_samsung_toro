@@ -34,6 +34,7 @@
 # 405518 = JRO03H
 # 438695 = JRO03R
 # 463694 = JZ054G
+# 485486 = JZO54K
 # end jb-dev
 # start jb-mr1-dev
 # 465036 = JOO75
@@ -46,8 +47,8 @@ then
 fi #ics-mr1
 if test $BRANCH=jb-dev
 then
-  ZIP=mysid-ota-405518.zip
-  BUILD=jro03h
+  ZIP=mysid-ota-485486.zip
+  BUILD=jzo54k
 fi # jb-dev
 if test $BRANCH=jb-mr1-dev
 then
@@ -107,7 +108,6 @@ do
   samsung)
     TO_EXTRACT="\
             system/app/BIP.apk \
-            system/app/CellBroadcastReceiver.apk \
             system/app/IMSFramework.apk \
             system/app/RTN.apk \
             system/app/SDM.apk \
