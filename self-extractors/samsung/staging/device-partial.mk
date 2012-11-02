@@ -28,3 +28,8 @@ PRODUCT_PACKAGES := \
     libims \
     libims_jni \
     libsec-ril_lte
+
+# This is Open Source but doesn't get built without
+# the other packages above
+PRODUCT_PACHAGES += \
+    CellBroadcastReceiver
