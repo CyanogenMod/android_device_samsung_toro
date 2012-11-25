@@ -1,5 +1,3 @@
-#!/bin/sh
-
 # Copyright (C) 2011 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,21 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# 223971 = ITL41D
-# 235179 = ICL53F
-# 299849 = IMM76D
-# 336647 = IMM76K
-# 397360 = JRO02C
-# 398337 = JRO03C
-# 424425 = JRO03O
+LOCAL_PATH := $(call my-dir)
 
-source ../../../common/clear-factory-images-variables.sh
-PRODUCT=mysid
-DEVICE=toro
-BUILD=424425
-VERSION=jro03o
-SRCPREFIX=signed-
-BOOTLOADER=primelc03
-RADIO=i515.fg02
-CDMARADIO=i515.ff02
-source ../../../common/generate-factory-images-common.sh
+ifeq ($(TARGET_DEVICE),toro)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libdrmdecrypt
+LOCAL_SRC_FILES := libdrmdecrypt.so
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_PATH := $(TARGET_OUT)/lib
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_OWNER := widevine
+include $(BUILD_PREBUILT)
+
+endif

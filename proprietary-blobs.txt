@@ -22,6 +22,7 @@
 /system/app/SPG.apk
 /system/app/SyncMLSvc.apk
 /system/bin/fRom
+/system/lib/libdrmdecrypt.so
 /system/lib/libsecril-client.so
 /system/lib/libsyncml_core.so
 /system/lib/libsyncml_port.so
