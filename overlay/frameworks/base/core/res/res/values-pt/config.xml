@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-/* //device/apps/common/assets/res/any/strings.xml
-**
-** Copyright 2006, The Android Open Source Project
+/*
+** Copyright 2009, The Android Open Source Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -18,8 +17,12 @@
 */
  -->
 
+<!--  These resources are around just to allow their values to be customized
+     for different hardware and product builds.  -->
+
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="permlab_readCellBroadcasts" msgid="257903761622214155">"leer mensajes de alerta de emergencia"</string>
-    <string name="permdesc_readCellBroadcasts" msgid="7941871237993413028">"Permite que la aplicación lea los mensajes de alerta de emergencia que recibe tu dispositivo. En algunas ubicaciones, las alertas de emergencia se envían para advertir situaciones de emergencia. Las aplicaciones maliciosas pueden afectar el rendimiento o funcionamiento de tu dispositivo cuando se recibe un mensaje de difusión móvil de emergencia."</string>
+  <string-array name="config_usbHostBlacklist">
+    <item msgid="4245337756933328701">"/dev/bus/usb/001"</item>
+  </string-array>
 </resources>
