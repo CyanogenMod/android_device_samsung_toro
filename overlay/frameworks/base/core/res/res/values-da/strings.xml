@@ -20,6 +20,6 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="permlab_readCellBroadcasts" msgid="257903761622214155">"læs nødalarmsbeskeder"</string>
-    <string name="permdesc_readCellBroadcasts" msgid="7941871237993413028">"Tillader, at appen læser nødalarmsbeskeder, der modtages af din enhed. I nogle områder sendes nødalarmsbeskeder for at advare om nødsituationer. Ondsindede apps kan forstyrre ydelsen eller driften af din enhed, når en mobiltransmission om en nødsituation modtages."</string>
+    <string name="permlab_readCellBroadcasts" msgid="257903761622214155">"læs beskeder om nødalarm"</string>
+    <string name="permdesc_readCellBroadcasts" msgid="7941871237993413028">"Tillader, at appen læser beskeder om nødalarmr, der modtages af din enhed. I nogle områder sendes beskeder om nødalarm for at advare om nødsituationer. Ondsindede apps kan forstyrre ydelsen eller driften af din enhed, når der modtages en mobiltransmission om en nødsituation."</string>
 </resources>
