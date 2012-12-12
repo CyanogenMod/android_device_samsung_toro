@@ -20,5 +20,5 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="menu_cell_broadcasts" msgid="3849716369345119724">"Arifa za dharura"</string>
+    <string name="menu_cell_broadcasts" msgid="3849716369345119724">"Arifa za tahadhari"</string>
 </resources>
