@@ -16,6 +16,6 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_label" msgid="6309526071996236065">"Poruke uzbunjivanja"</string>
-    <string name="sms_cb_settings" msgid="5286863780117877871">"Postavke poruka uzbunjivanja"</string>
+    <string name="app_label" msgid="6309526071996236065">"Poruke upozorenja"</string>
+    <string name="sms_cb_settings" msgid="5286863780117877871">"Postavke poruka upozorenja"</string>
 </resources>
