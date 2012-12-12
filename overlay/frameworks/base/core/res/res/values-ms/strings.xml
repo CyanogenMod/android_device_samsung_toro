@@ -21,5 +21,5 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="permlab_readCellBroadcasts" msgid="257903761622214155">"baca mesej awasan kecemasan"</string>
-    <string name="permdesc_readCellBroadcasts" msgid="7941871237993413028">"Membolehkan apl membaca mesej awasan kecemasan yang diterima oleh peranti anda. Awasan kecemasan dihantar di beberapa lokasi untuk memberi amaran kepada anda tentang situasi kecemasan. Apl hasad boleh mengganggu prestasi atau operasi peranti anda apabila siaran sel kecemasan diterima."</string>
+    <string name="permdesc_readCellBroadcasts" msgid="7941871237993413028">"Membolehkan apl membaca mesej awasan kecemasan yang diterima oleh peranti anda. Awasan kecemasan dihantar ke beberapa lokasi untuk memberi amaran kepada anda tentang situasi kecemasan. Apl hasad boleh mengganggu prestasi atau operasi peranti anda apabila siaran sel kecemasan diterima."</string>
 </resources>
