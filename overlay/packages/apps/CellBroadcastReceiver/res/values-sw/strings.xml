@@ -16,6 +16,6 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_label" msgid="6309526071996236065">"Arifa za Dharura"</string>
+    <string name="app_label" msgid="6309526071996236065">"Arifa za Tahadhari"</string>
     <string name="sms_cb_settings" msgid="5286863780117877871">"Mipangilio ya Arifa za Dharura"</string>
 </resources>
