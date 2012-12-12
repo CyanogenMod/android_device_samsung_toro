@@ -21,5 +21,5 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="permlab_readCellBroadcasts" msgid="257903761622214155">"读取紧急警报消息"</string>
-    <string name="permdesc_readCellBroadcasts" msgid="7941871237993413028">"允许应用读取您的设备收到的紧急警报消息。紧急警报消息是在某些地区发送的、用于发布紧急情况警告的提醒信息。恶意应用可能会在您收到小区紧急广播时干扰您设备的性能或操作。"</string>
+    <string name="permdesc_readCellBroadcasts" msgid="7941871237993413028">"允许该应用读取您的设备收到的紧急警报消息。紧急警报消息是在某些地区发送的、用于发布紧急情况警告的提醒信息。恶意应用可能会在您收到小区紧急广播时干扰您设备的性能或操作。"</string>
 </resources>
