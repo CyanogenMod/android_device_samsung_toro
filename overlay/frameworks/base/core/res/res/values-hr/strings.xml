@@ -20,6 +20,6 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="permlab_readCellBroadcasts" msgid="257903761622214155">"čitanje poruka uzbunjivanja"</string>
-    <string name="permdesc_readCellBroadcasts" msgid="7941871237993413028">"Omogućuje aplikaciji čitanje poruka uzbunjivanja koje prima vaš uređaj. Poruke uzbunjivanja dostavljaju se na nekim lokacijama radi upozoravanja korisnika na izvanredne situacije. Zlonamjerne aplikacije mogu ometati izvršavanje ili rad vašeg uređaja kada stigne hitno upozorenje koje se emitira unutar mobilne mreže."</string>
+    <string name="permlab_readCellBroadcasts" msgid="257903761622214155">"čitanje  poruka upozorenja"</string>
+    <string name="permdesc_readCellBroadcasts" msgid="7941871237993413028">"Omogućuje aplikaciji čitanje poruka upozorenja koje prima vaš uređaj. Poruke upozorenja dostavljaju se na nekim lokacijama radi upozoravanja korisnika na izvanredne situacije. Zlonamjerne aplikacije mogu ometati izvršavanje ili rad vašeg uređaja kada stigne hitno upozorenje koje se emitira unutar mobilne mreže."</string>
 </resources>

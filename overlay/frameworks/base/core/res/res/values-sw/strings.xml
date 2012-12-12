@@ -20,8 +20,6 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- String.format failed for translation -->
-    <!-- no translation found for permlab_readCellBroadcasts (257903761622214155) -->
-    <skip />
-    <string name="permdesc_readCellBroadcasts" msgid="7941871237993413028">"Huruhusu programu kusoma ujumbe wa arifa za dharura uliopokewa na kifaa chako. Arifa za dharura zinawasilishwa katika maeneo mengine ili kukuonya juu ya hali za dharura. Huenda programu hasidi zikatatiza utendajikazi au shughuli ya kifaa chako wakati matangazo ya simu ya dharura yamepokewa."</string>
+    <string name="permlab_readCellBroadcasts" msgid="257903761622214155">"soma ujumbe wa arifa za tahadhari"</string>
+    <string name="permdesc_readCellBroadcasts" msgid="7941871237993413028">"Huruhusu programu kusoma ujumbe wa arifa za dharura uliopokewa na kifaa chako. Arifa za dharura zinawasilishwa katika maeneo mengine ili kukuonya kuhusu hali za dharura. Huenda programu hasidi zikatatiza utendajikazi au shughuli ya kifaa chako wakati matangazo ya simu ya dharura yamepokewa."</string>
 </resources>
