@@ -43,7 +43,10 @@
 # 527221 = JOP40
 # 527662 = JOP40C
 # end jb-mr1-dev
-BRANCH=jb-mr1-dev
+# start jb-mr1.1-dev
+# 551245 = JDP82
+# end jb-mr1.1-dev
+BRANCH=jb-mr1.1-dev
 if test $BRANCH=ics-mr1
 then
   ZIP=mysid-ota-299849.zip
@@ -59,6 +62,11 @@ then
   ZIP=mysid-ota-527662.zip
   BUILD=jop40c
 fi # jb-mr1-dev
+if test $BRANCH=jb-mr1.1-dev
+then
+  ZIP=mysid-ota-551245
+  BUILD=jdp82
+fi # jb-mr1.1-dev
 ROOTDEVICE=toro
 DEVICE=toro
 MANUFACTURER=samsung
