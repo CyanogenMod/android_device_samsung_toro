@@ -17,4 +17,9 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="cell_broadcast_sms" msgid="4858486679238468646">"SMS за спешни сигнали"</string>
+    <string name="preferred_network_mode_cdma_evdo_gsm_wcdma_summary" msgid="4610723184193562852">"Предпочитан режим на мрежата: LTE/CDMA"</string>
+  <string-array name="preferred_network_mode_choices">
+    <item msgid="4378409752630901665">"LTE/CDMA"</item>
+    <item msgid="5056072282481813397">"CDMA"</item>
+  </string-array>
 </resources>
