@@ -21,5 +21,5 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="permlab_readCellBroadcasts" msgid="257903761622214155">"緊急警報メッセージの読み取り"</string>
-    <string name="permdesc_readCellBroadcasts" msgid="7941871237993413028">"端末で受信した緊急警報メッセージの読み取りをアプリに許可します。緊急警報は、緊急事態を警告する目的で一部の地域に配信されます。緊急エリアメールの受信時に、悪意のあるアプリによって端末の動作や処理が妨害される恐れがあります。"</string>
+    <string name="permdesc_readCellBroadcasts" msgid="7941871237993413028">"端末で受信した緊急警報メッセージの読み取りをアプリに許可します。緊急警報は、緊急事態を警告する目的で一部の地域に配信されます。緊急警報の受信時に、悪意のあるアプリによって端末の動作や処理が妨害される恐れがあります。"</string>
 </resources>
