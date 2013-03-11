@@ -31,5 +31,5 @@ PRODUCT_PACKAGES := \
 
 # This is Open Source but doesn't get built without
 # the other packages above
-PRODUCT_PACHAGES += \
+PRODUCT_PACKAGES += \
     CellBroadcastReceiver
