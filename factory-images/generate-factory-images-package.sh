@@ -21,14 +21,15 @@
 # 397360 = JRO02C
 # 398337 = JRO03C
 # 424425 = JRO03O
+# 573038 = JDQ39
 
 source ../../../common/clear-factory-images-variables.sh
 PRODUCT=mysid
 DEVICE=toro
-BUILD=424425
-VERSION=jro03o
+BUILD=573038
+VERSION=jdq39
 SRCPREFIX=signed-
 BOOTLOADER=primelc03
-RADIO=i515.fg02
-CDMARADIO=i515.ff02
+RADIO=i515.fk02
+CDMARADIO=i515.fk01
 source ../../../common/generate-factory-images-common.sh
