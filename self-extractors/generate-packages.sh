@@ -34,31 +34,45 @@
 # 405518 = JRO03H
 # 438695 = JRO03R
 # 463694 = JZ054G
+# 485486 = JZO54K
 # end jb-dev
 # start jb-mr1-dev
 # 465036 = JOO75
+# 521994 = JOP32B
+# 524024 = JOP36
+# 527221 = JOP40
+# 527662 = JOP40C
 # end jb-mr1-dev
-BRANCH=jb-mr1-dev
-if test $BRANCH=ics-mr1
+# start jb-mr1.1-dev
+# 551245 = JDP82
+# 573038 = JDQ39
+# end jb-mr1.1-dev
+BRANCH=jb-mr1.1-dev
+if test $BRANCH = ics-mr1
 then
   ZIP=mysid-ota-299849.zip
   BUILD=imm76d
 fi #ics-mr1
-if test $BRANCH=jb-dev
+if test $BRANCH = jb-dev
 then
-  ZIP=mysid-ota-405518.zip
-  BUILD=jro03h
+  ZIP=mysid-ota-485486.zip
+  BUILD=jzo54k
 fi # jb-dev
-if test $BRANCH=jb-mr1-dev
+if test $BRANCHi = jb-mr1-dev
 then
-  ZIP=mysid-ota-465036.zip
-  BUILD=joo75
+  ZIP=mysid-ota-527662.zip
+  BUILD=jop40c
 fi # jb-mr1-dev
+if test $BRANCH = jb-mr1.1-dev
+then
+  ZIP=mysid-ota-573038
+  BUILD=jdq39
+fi # jb-mr1.1-dev
 ROOTDEVICE=toro
 DEVICE=toro
 MANUFACTURER=samsung
 
-for COMPANY in broadcom csr imgtec invensense nxp samsung ti widevine
+for COMPANY in broadcom imgtec invensense nxp samsung widevine # csr ti
 do
   echo Processing files from $COMPANY
   rm -rf tmp
@@ -107,7 +121,6 @@ do
   samsung)
     TO_EXTRACT="\
             system/app/BIP.apk \
-            system/app/CellBroadcastReceiver.apk \
             system/app/IMSFramework.apk \
             system/app/RTN.apk \
             system/app/SDM.apk \
