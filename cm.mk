@@ -17,9 +17,9 @@ $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := toro
 PRODUCT_NAME := cm_toro
-PRODUCT_BRAND := Google
+PRODUCT_BRAND := google
 PRODUCT_MODEL := Galaxy Nexus
-PRODUCT_MANUFACTURER := Samsung
+PRODUCT_MANUFACTURER := samsung
 
 #Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mysid BUILD_FINGERPRINT="google/mysid/toro:4.3/JWR66V/737497:user/release-keys" PRIVATE_BUILD_DESC="mysid-user 4.3 JWR66V 737497 release-keys"

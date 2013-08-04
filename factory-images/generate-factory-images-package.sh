@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Copyright (C) 2011 The Android Open Source Project
+# Copyright 2011 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,14 +22,20 @@
 # 398337 = JRO03C
 # 424425 = JRO03O
 # 573038 = JDQ39
+# 683083 = JWR51
+# 689345 = JWR58
+# 690834 = JWR59
+# 704243 = JWR66G
+# 711294 = JWR66N
+# 737497 = JWR66V
 
 source ../../../common/clear-factory-images-variables.sh
 PRODUCT=mysid
 DEVICE=toro
-BUILD=573038
-VERSION=jdq39
+BUILD=737497
+VERSION=jwr66v
 SRCPREFIX=signed-
-BOOTLOADER=primelc03
+BOOTLOADER=primemd04
 RADIO=i515.fk02
 CDMARADIO=i515.fk01
 source ../../../common/generate-factory-images-common.sh

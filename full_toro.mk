@@ -1,4 +1,3 @@
-# Portions Copyright (C) 2012 VMware, Inc. All Rights Reserved.
 # Copyright (C) 2011 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,8 +23,7 @@
 
 # Camera and Gallery
 PRODUCT_PACKAGES := \
-    Gallery \
-    GNexusParts
+    Gallery2
 
 # Do this before aosp_base_telephony is included since the first instance takes precedence
 PRODUCT_COPY_FILES += \
