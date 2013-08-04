@@ -6,6 +6,9 @@ rild.libpath=/vendor/lib/libsec-ril_lte.so
 rild.libargs=-d /dev/ttys0
 telephony.lteOnCdmaDevice=1
 
+# Set PREFERRED_NETWORK_MODE to GLOBAL in Database for this device
+ro.telephony.default_network=7
+
 # Ril sends only one RIL_UNSOL_CALL_RING, so set call_ring.multiple to false
 ro.telephony.call_ring.multiple=0
 
@@ -15,9 +18,6 @@ persist.radio.imsallowmtsms=1
 
 # Default ecclist
 ro.ril.ecclist=112,911,#911,*911
-
-# Default to LTE/CDMA Network Mode
-ro.telephony.default_network=7
 
 # GPU producer to CPU consumer not supported
 ro.bq.gpu_to_cpu_unsupported=1
