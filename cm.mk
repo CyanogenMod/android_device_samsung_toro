@@ -9,7 +9,7 @@ TARGET_SCREEN_WIDTH := 720
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/toro/full_toro.mk)
+$(call inherit-product, device/samsung/toro/aosp_toro.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
