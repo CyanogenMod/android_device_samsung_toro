@@ -19,14 +19,12 @@
     <string name="cell_broadcast_sms">Emergency Alerts SMS</string>
 
     <!-- Bug in RIL. It believes 7 is CDMA/LTE/EVDO even though that contradicts ril.h -->
-    <string name="preferred_network_mode_cdma_evdo_gsm_wcdma_summary">Preferred network mode: LTE / CDMA</string>
+    <string name="preferred_network_mode_cdma_evdo_gsm_wcdma_summary">Preferred network mode: LTE</string>
 
-    <string-array name="preferred_network_mode_choices">
-        <item>LTE/CDMA</item>
-        <item>CDMA</item>
-    </string-array>
-    <string-array name="preferred_network_mode_values" translatable="false">
+    <string-array name="enabled_networks_cdma_values" translatable="false">
         <item>"7"</item>
         <item>"4"</item>
+        <item>"5"</item>
+        <item>"10"</item>
     </string-array>
 </resources>
