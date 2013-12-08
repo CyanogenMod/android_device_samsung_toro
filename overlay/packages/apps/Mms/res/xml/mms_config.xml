@@ -25,7 +25,7 @@
     <bool name="enabledNotifyWapMMSC">true</bool>
 
     <!-- Maximum message size in bytes for a MMS message -->
-    <int name="maxMessageSize">1258291</int>
+    <int name="maxMessageSize">1045876</int>
 
     <!-- User-Agent parameter used in MMS http request -->
     <string name="userAgent">sami515</string>
