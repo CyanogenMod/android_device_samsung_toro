@@ -24,4 +24,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=7
 
 $(call inherit-product, device/samsung/tuna/device.mk)
-$(call inherit-product-if-exists, vendor/samsung/toro/device-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/toro/toro-vendor.mk)
