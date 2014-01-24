@@ -1,0 +1,12 @@
+app/BIP.apk
+app/IMSFramework.apk
+app/RTN.apk
+app/VZWAPNLib.apk
+app/VZWAPNService.apk
+etc/permissions/com.vzw.hardware.ehrpd.xml
+etc/permissions/com.vzw.hardware.lte.xml
+etc/permissions/com.vzw.vzwapnlib.xml
+lib/lib_gsd4t.so
+vendor/lib/libims.so
+vendor/lib/libims_jni.so
+vendor/lib/libsec-ril_lte.so
