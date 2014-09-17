@@ -1,7 +1,6 @@
 #
 # system.prop for toro
 #
-
 rild.libpath=/vendor/lib/libsec-ril_lte.so
 rild.libargs=-d /dev/ttys0
 telephony.lteOnCdmaDevice=1
@@ -18,6 +17,3 @@ ro.ril.ecclist=112,911,#911,*911
 
 # Default to LTE/CDMA Network Mode
 ro.telephony.default_network=7
-
-# GPU producer to CPU consumer not supported
-ro.bq.gpu_to_cpu_unsupported=1
