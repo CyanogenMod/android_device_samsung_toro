@@ -8,12 +8,36 @@ telephony.lteOnCdmaDevice=1
 # Ril sends only one RIL_UNSOL_CALL_RING, so set call_ring.multiple to false
 ro.telephony.call_ring.multiple=0
 
+# Set CDMA SUBSCRIPTION SOURCE to RUIM in Database for this device
+ro.telephony.default_cdma_sub=0
+
+# Enable code specific to toro's RIL
+ro.telephony.ril.config=usevoicetechfordata,writeaid
+
+# Don't power down SIM in airplane mode
+persist.radio.apm_sim_not_pwdn=1
+
 # Turn on IMS by default
 persist.radio.imsregrequired=1
 persist.radio.imsallowmtsms=1
+
+# Store correct IMSI when retreived from SIMRecords and use it for Ruim Records
+ro.telephony.get_imsi_from_sim=true
 
 # Default ecclist
 ro.ril.ecclist=112,911,#911,*911
 
 # Default to LTE/CDMA Network Mode
-ro.telephony.default_network=7
+ro.telephony.default_network=8
+
+# Don't consider Out Of Service as data call disconnect
+persist.telephony.oosisdc=false
+
+# Default CDMA/LTE values from 4.2.2 OTA
+ro.cdma.home.operator.numeric=310004
+ro.cdma.home.operator.alpha=Verizon
+ro.cdma.homesystem=64,65,76,77,78,79,80,81,82,83
+ro.cdma.data_retry_config=default_randomization=2000,0,0,120000,180000,540000,960000
+ro.gsm.data_retry_config=max_retries=infinite,default_randomization=2000,0,0,80000,125000,485000,905000
+ro.gsm.2nd_data_retry_config=max_retries=infinite,default_randomization=2000,0,0,80000,125000,485000,905000
+ro.cdma.otaspnumschema=SELC,1,80,99
