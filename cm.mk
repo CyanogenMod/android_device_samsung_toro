@@ -5,6 +5,9 @@ PRODUCT_RELEASE_NAME := GN-CDMA
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
+PRODUCT_COPY_FILES += \
+	device/samsung/toro/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
+
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
