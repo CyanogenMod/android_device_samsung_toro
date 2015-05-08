@@ -27,6 +27,9 @@ PRODUCT_COPY_FILES += \
     device/samsung/toro/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
 
+# Sounds for tuna
+$(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage13.mk)
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # This is where we'd set a backup provider if we had one
