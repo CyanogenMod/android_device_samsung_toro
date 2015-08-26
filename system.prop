@@ -12,7 +12,6 @@ ro.telephony.call_ring.multiple=0
 ro.telephony.default_cdma_sub=0
 
 # Enable code specific to toro's RIL
-ro.telephony.toroRIL=1
 ro.telephony.ril.config=usevoicetechfordata,writeaid
 
 # Don't power down SIM in airplane mode
@@ -29,7 +28,7 @@ ro.telephony.get_imsi_from_sim=true
 ro.ril.ecclist=112,911,#911,*911
 
 # Default to LTE/CDMA Network Mode
-ro.telephony.default_network=7
+ro.telephony.default_network=8
 
 # Don't consider Out Of Service as data call disconnect
 persist.telephony.oosisdc=false
