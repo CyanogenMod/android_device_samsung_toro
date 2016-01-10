@@ -1,0 +1,1 @@
+allow platform_app rild:unix_stream_socket connectto;
