@@ -18,7 +18,7 @@
 #
 # Everything in this directory will become public
 
-DEVICE_PACKAGE_OVERLAYS := device/samsung/toro/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/toro/overlay
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=7
