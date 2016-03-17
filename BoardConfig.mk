@@ -34,7 +34,3 @@ BOARD_INVENSENSE_APPLY_COMPASS_NOISE_FILTER := true
 # SELinux
 BOARD_SEPOLICY_DIRS += \
 	device/samsung/toro/sepolicy
-
-BOARD_SEPOLICY_UNION += \
-	rild.te \
-	platform_app.te
