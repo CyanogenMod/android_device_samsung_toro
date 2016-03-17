@@ -10,7 +10,7 @@ PRODUCT_COPY_FILES += \
 	device/samsung/toro/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/cm/config/common_mini_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/toro/aosp_toro.mk)
