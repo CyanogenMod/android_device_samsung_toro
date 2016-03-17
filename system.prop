@@ -1,8 +1,8 @@
 #
 # system.prop for toro
 #
-rild.libpath=/vendor/lib/libsec-ril_lte.so
-rild.libargs=-d /dev/ttys0
+rild.libpath=/system/lib/libsecril-shim.so
+rild.libargs=-d /dev/ttys0 --
 telephony.lteOnCdmaDevice=1
 
 # Ril sends only one RIL_UNSOL_CALL_RING, so set call_ring.multiple to false
@@ -12,7 +12,7 @@ ro.telephony.call_ring.multiple=0
 ro.telephony.default_cdma_sub=0
 
 # Enable RIL compatiblilty features
-ro.telephony.ril.config=usevoicetechfordata
+ro.telephony.ril.config=setPrefNwTypeOnUnsolConnected
 
 # Turn on IMS by default
 persist.radio.imsregrequired=1
