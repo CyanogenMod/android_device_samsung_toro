@@ -1,0 +1,2 @@
+allow netd sysfs:dir write;
+
